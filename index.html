@@ -1,73 +1,401 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Lunafé</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lunafé — Conecta con tu ciclo, confía en ti</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
 </head>
-
 <body>
 
-<header>
-    <img src="logo.png.jpeg" alt="Logo Lunafé" width="100">
-    <h1>Lunafé 🌙</h1>
-    <p>Conecta con tu ciclo, conecta contigo</p>
-</header>
+  <!-- ── LOGO FIJO ── -->
+  <a href="#inicio" class="logo-fijo">
+    <img src="logo.png" alt="Lunafé" class="logo-fijo-img" />
+    <span class="logo-fijo-text">Lunafé</span>
+  </a>
 
-<nav>
-    <a href="#">Inicio</a>
-    <a href="#funciones">Funciones</a>
-    <a href="#nosotros">Nosotros</a>
-    <a href="#contacto">Contacto</a>
-</nav>
-
-<section class="hero">
-    <h2>Tu bienestar en cada fase</h2>
-    <p>Una app diseñada para entender tu cuerpo y tus emociones</p>
-</section>
-
-<section id="funciones">
-    <h2>Funciones</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>📅 Ciclo menstrual</h3>
-            <p>Registra y predice tu ciclo de forma sencilla.</p>
-        </div>
-
-        <div class="card">
-            <h3>💖 Emociones</h3>
-            <p>Monitorea cómo te sientes cada día.</p>
-        </div>
-
-        <div class="card">
-            <h3>🌿 Bienestar</h3>
-            <p>Recibe consejos personalizados.</p>
-        </div>
+  <!-- ── NAVBAR ── -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="nav-links">
+        <a href="#inicio"    class="nav-link">Inicio</a>
+        <a href="#funciones" class="nav-link">Funciones</a>
+        <a href="#nosotros"  class="nav-link">Nosotros</a>
+        <a href="#valores"   class="nav-link">Valores</a>
+        <a href="#contacto"  class="nav-link">Contacto</a>
+      </nav>
     </div>
-</section>
+  </header>
 
-<section id="nosotros">
-    <h2>Sobre Lunafé</h2>
-    <p>
-    Lunafé nace con el objetivo de ayudar a las mujeres a comprender su ciclo menstrual
-    de forma más consciente, integrando tecnología y bienestar emocional.
-    </p>
-</section>
+  <!-- ── HERO ── -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="hero-orb orb1"></div>
+    <div class="hero-orb orb2"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">
+        Conecta con<br/>
+        <em>tu ciclo,</em><br/>
+        confía en ti.
+      </h1>
+      <p class="hero-sub">
+        Una aplicación pensada para que entiendas tu cuerpo,<br/>
+        tus emociones y cada fase de tu ciclo menstrual.
+      </p>
+      <div class="hero-btns">
+        <a href="#funciones" class="btn btn-primary">Explorar funciones</a>
+        <a href="#nosotros"  class="btn btn-ghost">Conoce Lunafé</a>
+      </div>
+    </div>
+    <div class="hero-moon-wrap">
+      <div class="moon-ring ring3"></div>
+      <div class="moon-ring ring2"></div>
+      <div class="moon-ring ring1"></div>
+      <div class="moon-core">🌙</div>
+    </div>
+  </section>
 
-<section id="contacto">
-    <h2>Contacto</h2>
-    <p>Email: lunafe@app.com</p>
-</section>
+  <!-- ── FRANJA STATS ── -->
+  <section class="stats-band">
+    <div class="stat">
+      <span class="stat-num">4</span>
+      <span class="stat-label">Fases del ciclo</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-num">3</span>
+      <span class="stat-label">Módulos de bienestar</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-num">∞</span>
+      <span class="stat-label">Días de autoconocimiento</span>
+    </div>
+  </section>
 
-<footer>
-    <p>© 2026 Lunafé</p>
-</footer>
+  <!-- ── FUNCIONES ── -->
+  <section class="section" id="funciones">
+    <div class="section-inner">
+      <div class="section-label">✦ Funciones</div>
+      <h2 class="section-title">Tu bienestar en<br/><em>cada fase</em></h2>
+      <p class="section-sub">
+        Lunafé va más allá del registro de fechas. Te acompaña<br/>
+        con herramientas diseñadas para tu cuerpo y tus emociones.
+      </p>
 
-<section>
-  <h2>Bienestar femenino</h2>
-  <img src="bienestar.jps.jpeg" alt="Bienestar femenino">
-  <p>Conecta con tu cuerpo y tu ciclo de manera saludable.</p>
-</section>
+      <div class="cards-grid">
 
-</body>
-</html>
+        <div class="card card--purple">
+          <div class="card-icon">📅</div>
+          <h3>Ciclo Menstrual</h3>
+          <p>Registra y predice tu ciclo de forma sencilla. Conoce en qué fase estás cada día y qué esperar de tu cuerpo.</p>
+          <ul class="card-list">
+            <li>Predicción de período</li>
+            <li>Fases ovulatoria y lútea</li>
+            <li>Historial personalizado</li>
+          </ul>
+        </div>
+
+        <div class="card card--pink">
+          <div class="card-icon">💗</div>
+          <h3>Emociones</h3>
+          <p>Monitorea cómo te sientes cada día. Comprende la relación entre tus hormonas y tu estado emocional.</p>
+          <ul class="card-list">
+            <li>Diario emocional diario</li>
+            <li>Patrones emocionales</li>
+            <li>Insights personalizados</li>
+          </ul>
+        </div>
+
+        <div class="card card--sage">
+          <div class="card-icon">🌿</div>
+          <h3>Bienestar</h3>
+          <p>Recibe consejos personalizados de autocuidado adaptados a tu fase del ciclo para sentirte mejor cada día.</p>
+          <ul class="card-list">
+            <li>Tips según tu fase</li>
+            <li>Rutinas de autocuidado</li>
+            <li>Recordatorios amables</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── LAS 4 FASES ── -->
+  <section class="fases-section">
+    <div class="section-inner">
+      <div class="section-label">✦ Tu ciclo</div>
+      <h2 class="section-title">Las 4 fases de<br/><em>tu ciclo</em></h2>
+
+      <div class="fases-timeline">
+        <div class="fase">
+          <div class="fase-dot" style="background: #e8a0bf;"></div>
+          <div class="fase-num">01</div>
+          <h4>Menstruación</h4>
+          <p>Tu cuerpo se renueva. Momento de descanso, introspección y cuidado profundo.</p>
+        </div>
+        <div class="fase-line"></div>
+        <div class="fase">
+          <div class="fase-dot" style="background: #b5d5c5;"></div>
+          <div class="fase-num">02</div>
+          <h4>Folicular</h4>
+          <p>Energía en ascenso. Ideal para iniciar proyectos, socializar y explorar cosas nuevas.</p>
+        </div>
+        <div class="fase-line"></div>
+        <div class="fase">
+          <div class="fase-dot" style="background: #ffd6a5;"></div>
+          <div class="fase-num">03</div>
+          <h4>Ovulación</h4>
+          <p>Tu pico de vitalidad. Mayor energía, confianza y capacidad de conexión con los demás.</p>
+        </div>
+        <div class="fase-line"></div>
+        <div class="fase">
+          <div class="fase-dot" style="background: #c9b8e8;"></div>
+          <div class="fase-num">04</div>
+          <h4>Lútea</h4>
+          <p>Reflexión y sensibilidad. Momento para completar tareas y atender tus necesidades internas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── NOSOTROS ── -->
+  <section class="section section--dark" id="nosotros">
+    <div class="section-inner nosotros-grid">
+      <div class="nosotros-text">
+        <div class="section-label light">✦ Nosotros</div>
+        <h2 class="section-title light">Sobre<br/><em>Lunafé</em></h2>
+        <p>
+          Lunafé nace de la observación de que muchas mujeres llevan su ciclo menstrual únicamente como una fecha marcada en un calendario, sin comprender realmente cómo cada etapa influye en su cuerpo, sus emociones y su bienestar diario.
+        </p>
+        <p>
+          Con el crecimiento de la tecnología y su impacto en el autocuidado, creamos una aplicación móvil que acompaña a las mujeres de forma cercana y sencilla — integrando el seguimiento del ciclo con el entendimiento emocional y físico de cada etapa.
+        </p>
+        <div class="nosotros-badges">
+          <span class="badge">🌙 Luna</span>
+          <span class="badge">✨ Fé</span>
+          <span class="badge">💜 Tecnología</span>
+          <span class="badge">🌿 Bienestar</span>
+        </div>
+      </div>
+      <div class="nosotros-visual">
+        <div class="nombre-origen">
+          <div class="nombre-row">
+            <span class="nombre-parte">LUNA</span>
+            <span class="nombre-significado">Ciclos, ritmo natural y energía femenina</span>
+          </div>
+          <div class="nombre-row">
+            <span class="nombre-parte">FÉ</span>
+            <span class="nombre-significado">Confianza, fuerza interior y autocuidado</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── VALORES ── -->
+  <section class="section" id="valores">
+    <div class="section-inner">
+      <div class="section-label">✦ Valores</div>
+      <h2 class="section-title">Lo que nos<br/><em>define</em></h2>
+
+      <div class="valores-grid">
+        <div class="valor">
+          <span class="valor-icon">🌸</span>
+          <h4>Autocuidado</h4>
+          <p>Promovemos el cuidado consciente del cuerpo y las emociones.</p>
+        </div>
+        <div class="valor">
+          <span class="valor-icon">✨</span>
+          <h4>Confianza</h4>
+          <p>Fomentamos la seguridad y el conocimiento personal.</p>
+        </div>
+        <div class="valor">
+          <span class="valor-icon">🤝</span>
+          <h4>Respeto</h4>
+          <p>Valoramos cada cuerpo y cada ciclo como únicos.</p>
+        </div>
+        <div class="valor">
+          <span class="valor-icon">⚖️</span>
+          <h4>Bienestar</h4>
+          <p>Buscamos el equilibrio físico y emocional.</p>
+        </div>
+        <div class="valor">
+          <span class="valor-icon">💬</span>
+          <h4>Cercanía</h4>
+          <p>Comunicamos de forma clara, humana y accesible.</p>
+        </div>
+        <div class="valor">
+          <span class="valor-icon">🔒</span>
+          <h4>Privacidad</h4>
+          <p>Protegemos la información personal de nuestras usuarias.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── DESCARGA APP ── -->
+  <section class="section descarga-section" id="descarga">
+    <div class="section-inner">
+      <div class="section-label" style="justify-content:center;">✦ Descarga</div>
+      <h2 class="section-title" style="text-align:center;">Descarga<br/><em>la app</em></h2>
+      <p class="section-sub" style="text-align:center; margin-left:auto; margin-right:auto;">
+        Lleva Lunafé contigo. Disponible próximamente para Android. Descarga el APK directamente y empieza tu viaje de autoconocimiento.
+      </p>
+      <div class="descarga-card">
+        <div class="descarga-mockup">
+          <div class="phone-mock">
+            <div class="phone-screen">
+              <span style="font-size:3rem;">🌙</span>
+              <span style="font-family:'Cormorant Garamond',serif; font-size:1.4rem; color:#6b3fa0;">Lunafé</span>
+              <span style="font-size:.75rem; color:#8a7aa8;">Conecta con tu ciclo</span>
+            </div>
+          </div>
+        </div>
+        <div class="descarga-info">
+          <div class="app-badge-row">
+            <div class="app-badge android">
+              <span class="ab-icon">🤖</span>
+              <div>
+                <span class="ab-sub">Disponible para</span>
+                <span class="ab-title">Android</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- BLOQUE DE DESCARGA — cuando tengas el APK, reemplaza el href con la ruta real -->
+          <div class="apk-block">
+            <div class="apk-icon">📦</div>
+            <div class="apk-details">
+              <strong>Lunafé App — v1.0</strong>
+              <span>Archivo APK · Android 8.0+</span>
+            </div>
+            <!-- Cuando el APK esté listo, reemplaza # con la ruta: href="descargas/lunafe.apk" -->
+            <a href="#" class="btn btn-primary apk-btn" id="apk-download-btn">
+              Descargar APK ↓
+            </a>
+          </div>
+
+          <div class="apk-nota">
+            <span>⚠️</span>
+            <p>Al instalar un APK externo, activa <strong>"Fuentes desconocidas"</strong> en Configuración → Seguridad de tu Android.</p>
+          </div>
+
+          <!-- Si también tienes un link de Google Play, descomenta esto:
+          <a href="https://play.google.com/store/apps/details?id=TU_ID" class="btn btn-ghost" target="_blank">
+            Ver en Google Play
+          </a>
+          -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ── -->
+  <section class="cta-section">
+    <div class="cta-orb cta-orb1"></div>
+    <div class="cta-orb cta-orb2"></div>
+    <div class="cta-content">
+      <div class="section-label light">✦ Únete</div>
+      <h2 class="cta-title">Empieza a vivir tu ciclo<br/><em>con consciencia</em></h2>
+      <p>"Conecta con tu ciclo, confía en ti."</p>
+      <a href="#contacto" class="btn btn-primary btn-lg">Contáctanos</a>
+    </div>
+  </section>
+
+  <!-- ── CONTACTO ── -->
+  <section class="section" id="contacto">
+    <div class="section-inner contacto-center-wrap">
+      <div class="section-label" style="justify-content:center;">✦ Contacto</div>
+      <h2 class="section-title" style="text-align:center;">Contáctanos</h2>
+      <div class="contacto-email-tag">
+        <span>📧</span>
+        <a href="/cdn-cgi/l/email-protection#1478617a757271547564643a777b79"><span class="__cf_email__" data-cfemail="224e574c434447624352520c414d4f">[email&#160;protected]</span></a>
+      </div>
+     <form class="contacto-form contacto-form--center" action="https://formspree.io/f/xdawbljl" method="POST">
+        <div class="form-group">
+          <label>Nombre</label>
+          <input type="text" placeholder="Tu nombre" required />
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="tu@email.com" required />
+        </div>
+        <div class="form-group">
+          <label>Mensaje</label>
+          <textarea rows="4" placeholder="¿Cómo podemos ayudarte?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Enviar mensaje ✦</button>
+        <p class="form-success" id="form-success">¡Mensaje enviado! Te contactamos pronto 🌙</p>
+      </form>
+    </div>
+  </section>
+
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">🌙 Lunafé</div>
+      <p class="footer-slogan">Conecta con tu ciclo, confía en ti.</p>
+      <nav class="footer-nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#funciones">Funciones</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#valores">Valores</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <p class="footer-copy">© 2026 Lunafé. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    // ── Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      hamburger.classList.toggle('active');
+    });
+    // close on link click
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        hamburger.classList.remove('active');
+      });
+    });
+
+    // ── Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', scrollY > 50);
+    });
+
+    // ── Active nav link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinksAll = document.querySelectorAll('.nav-link');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => { if (scrollY >= s.offsetTop - 120) current = s.id; });
+      navLinksAll.forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+      });
+    });
+
+    // ── Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // ── Intersection Observer for fade-in
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach
